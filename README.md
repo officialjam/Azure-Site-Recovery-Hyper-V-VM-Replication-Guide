@@ -1,5 +1,4 @@
-# Azure-Site-Recovery-Hyper-V-VM-Replication-Guide
-
+<h1>Recovery-Hyper-V-VM-Replication-Guide</h1>
 
 ## Introduction
 
@@ -41,6 +40,48 @@ This guide will help you realize these benefits as you configure and manage ASR 
 The vault has been created and now we neede to prepare our hyper-v serevr for the integration 
 
 ### Step 2: Preparing Hyper-V Hosts
+- In the site recovery vault, click site recovery and click prepare infrastructure 
+<img width="1680" alt="2" src="https://github.com/user-attachments/assets/0bf6ec47-ceb2-4a85-b7cd-bd8280aaac13">
+- You are taken to an infrastrcuture integration step, select the "Yes, i have done it" option
+<img width="1680" alt="3" src="https://github.com/user-attachments/assets/68606960-4337-452a-b3db-c36a5b67ab59">
+- In the next step, select the no option, create and add Hyper-v site and give it a name
+<img width="1680" alt="5" src="https://github.com/user-attachments/assets/fc61a405-fb39-4301-aa9b-5417b67a6bd6">
+- Click the "add Hyper-v server" option to add a server. In this step, you will need to download the "installer for the microsoft azure site recovery provider" and "vault registration key" on the hyper-v host to finish the integration
+<img width="1680" alt="6" src="https://github.com/user-attachments/assets/b193bbac-8775-4a3e-9a0d-dfe283acbe94">
+- After downloading the installer, proceed to installation
+<img width="1680" alt="8" src="https://github.com/user-attachments/assets/311eb339-b8d3-4e5d-9683-2c3ab4737747">
+- Click finish and proceed to browse to the key file and click next
+<img width="1680" alt="9" src="https://github.com/user-attachments/assets/617b654e-5135-46b3-bfcb-6d385a63cffe">
+- In the next option, select the option that best suits your personal or ogarnizational needs
+<img width="1680" alt="10" src="https://github.com/user-attachments/assets/66819dde-c319-42a6-85e8-7e7e4cd7cec4">
+- Then finish up the installation
+<img width="1680" alt="10 5" src="https://github.com/user-attachments/assets/2bcb15d9-9e6b-44ef-a3c2-7444fccfd632">
+- Go back to your azure portal, then go back to the vault and click site recovery infrastructure
+<img width="1680" alt="11 25" src="https://github.com/user-attachments/assets/69fac3eb-53cf-4d5e-899d-1555aa93b779">
+- Select the "Hyper-V Hosts" option 
+<img width="1680" alt="11 50" src="https://github.com/user-attachments/assets/d158fcde-e524-408a-a081-f5504b35e27a">
+- You will see your hyper-v host there, and showing connected
+<img width="1680" alt="11 75" src="https://github.com/user-attachments/assets/05092f63-6566-4fb4-997f-b2ea302e342b">
+- Then go back to the prepare infrastructure step and your server should be showing, click next and move to the next step 
+<img width="1680" alt="12 5" src="https://github.com/user-attachments/assets/f8655363-6d49-4598-a4b0-7b0b31d691d4">
+- In the replication policy, select any policy or create one
+<img width="1680" alt="13" src="https://github.com/user-attachments/assets/23501dff-14cd-4c0e-bbf9-77c66254540d">
+- Click the create option and create a policy
+<img width="1680" alt="13 5" src="https://github.com/user-attachments/assets/16a6b1fb-cc02-42ca-a998-49dbb3c9aa7d">
+<img width="1680" alt="13 55" src="https://github.com/user-attachments/assets/e77865bd-b0d9-43bc-a4d2-83245eb515af">
+- Then finish the process and prepare the infrastructure
+<img width="1680" alt="13 75" src="https://github.com/user-attachments/assets/1fac6c9e-4ba1-4cea-8753-f20ba9082b4d">
+
+### Step 3: Replicating Hyper-V VMs
+
+
+
+
+
+
+
+
+
 
 
 
