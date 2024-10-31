@@ -14,8 +14,6 @@ This guide serves as a comprehensive resource for IT administrators and cloud en
 - **Configure replication** of Hyper-V VMs to Azure.
 - **Manage failover and failback** to reduce downtime during critical scenarios.
 
-Following this guide will provide users with the knowledge to implement a reliable disaster recovery solution using ASR to protect their Hyper-V VMs.
-
 ### Benefits of Replicating Hyper-V VMs to Azure
 Using ASR to replicate Hyper-V VMs to Azure offers several advantages:
 
@@ -26,6 +24,47 @@ Using ASR to replicate Hyper-V VMs to Azure offers several advantages:
 - **Security and Compliance**: ASR provides built-in encryption and aligns with Microsoft’s compliance certifications, ensuring secure replication and failover of workloads.
 
 This guide will help you realize these benefits as you configure and manage ASR for Hyper-V VM replication, establishing a robust disaster recovery strategy.
+
+## Prerequisites
+- Required subscriptions and permissions
+- Supported Hyper-V versions and configurations
+- Network and storage considerations
+- Preparing your environment
+
+
+## Setup and Configuration
+### Step 1: Setting Up Azure Site Recovery
+- Go to azure portal and browse to Azure recovery service vault
+- Click create vault, enter details and fill to suit your needs
+<img width="1680" alt="1 5" src="https://github.com/user-attachments/assets/0a8290ef-f335-46af-abdb-c2d3fe63ca1c">
+
+The vault has been created and now we neede to prepare our hyper-v serevr for the integration 
+
+### Step 2: Preparing Hyper-V Hosts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
