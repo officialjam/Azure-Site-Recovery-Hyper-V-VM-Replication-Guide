@@ -84,8 +84,67 @@ The vault has been created and now we neede to prepare our hyper-v serevr for th
 -  Then under replication health click on the "view all vm's" to see the synchronization status, wait till its a 100% then the replication is complete 
 <img width="1680" alt="17 5" src="https://github.com/user-attachments/assets/5a9b99a8-1a54-451e-9957-897cb4d02959">
 
-## Managing Replication
+## Managing Replication (Perform test failover)
+- To perform a test failover go the vault
+- Then go to replicated item and click on the replicated vm
+- select the "Test Failover"
+- Then cliick ok to start the Test failover
+- Wait for it to run finish
+<img width="1680" alt="18" src="https://github.com/user-attachments/assets/6ef885a5-379d-4d72-8f26-5dfafa9a3220">
 
+After sucessful test failover, a vm replica would have been created and would be in your list of vms in azure 
+<img width="1680" alt="19" src="https://github.com/user-attachments/assets/d8af9abc-fcac-4f17-a68a-1a8661fb867a">
+
+After the whole process, you can go back to the particular replicated vm and cleanup the vm, which would delete it. 
+
+## Conclusion
+
+Implementing Azure Site Recovery (ASR) for Hyper-V VM replication provides organizations with a powerful and flexible disaster recovery solution. By leveraging ASR, you can ensure business continuity, minimize downtime, and protect critical workloads with efficient replication, failover, and failback capabilities. This guide has outlined the steps to set up ASR, prepare your environment, and manage your replication and failover processes, empowering you to create a reliable and scalable disaster recovery strategy in Azure.
+
+As you continue to work with ASR, refer to the additional resources for ongoing learning and support, enabling you to optimize your disaster recovery setup and stay current with best practices and updates. Whether for planned maintenance or unforeseen disruptions, ASR provides the resilience needed to keep your organization’s IT environment secure, accessible, and operational.
+
+## Additional Resources
+
+To enhance your understanding and support successful implementation of Azure Site Recovery (ASR) for Hyper-V VM replication, the following resources provide further technical guidance, training, and updates on ASR capabilities.
+
+### Microsoft Documentation
+- **[Azure Site Recovery Overview](https://learn.microsoft.com/en-us/azure/site-recovery/)**  
+  This official Microsoft documentation offers an in-depth overview of ASR, including architecture, supported scenarios, and setup guides. It’s an essential resource for understanding the foundational concepts and requirements of ASR.
+  
+- **[Hyper-V to Azure Disaster Recovery](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-disaster-recovery)**  
+  This guide focuses specifically on ASR disaster recovery for Hyper-V environments. It covers detailed setup instructions, configuration steps, and troubleshooting tips for Hyper-V VM replication.
+
+- **[Azure Networking Documentation](https://learn.microsoft.com/en-us/azure/virtual-network/)**  
+  Since ASR relies on a robust network setup, this resource provides insights into Azure virtual networks, VPN gateways, and ExpressRoute, helping ensure connectivity requirements for ASR replication.
+
+- **[Azure Security and Compliance](https://learn.microsoft.com/en-us/azure/security/)**  
+  Learn about Azure’s comprehensive security features and compliance offerings to understand how ASR aligns with industry standards and best practices for disaster recovery.
+
+### Training and Tutorials
+- **[Microsoft Learn - Azure Site Recovery](https://docs.microsoft.com/en-us/learn/azure/)**  
+  Microsoft Learn offers free, hands-on training modules covering various aspects of Azure Site Recovery. These courses are ideal for mastering ASR concepts, setting up replication, and managing failover scenarios.
+
+- **[Azure Disaster Recovery Hands-On Labs](https://techcommunity.microsoft.com/t5/itops-talk-blog/azure-site-recovery-hands-on-lab-series/ba-p/1806846)**  
+  The ASR Hands-On Lab Series provides practical scenarios and step-by-step labs to apply ASR in real-world disaster recovery situations. These labs are helpful for testing ASR features in a controlled environment.
+
+- **[Microsoft Learn - Azure Networking Fundamentals](https://docs.microsoft.com/en-us/learn/paths/azure-network-engineer-associate/)**  
+  This training path covers the fundamentals of Azure networking, an essential component of setting up and managing ASR. It includes modules on configuring virtual networks, implementing VPNs, and securing Azure environments.
+
+### Blogs and Community Articles
+- **[Azure Updates - Site Recovery](https://azure.microsoft.com/en-us/updates/)**  
+  Stay updated on the latest ASR features, enhancements, and changes with Azure Updates. This page regularly posts updates on all Azure services, including Site Recovery, to ensure you are informed of any new capabilities or best practices.
+
+- **[Microsoft Tech Community: Azure Site Recovery Blog](https://techcommunity.microsoft.com/t5/azure/site-recovery/ct-p/Azure-Site-Recovery)**  
+  The ASR blog on Microsoft Tech Community includes articles, best practices, and troubleshooting advice from Microsoft engineers and experts in the field. It’s a valuable source for advanced use cases and peer insights.
+
+### Related Tools and Services
+- **[Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/)**  
+  Azure Migrate is a service for assessing and migrating on-premises workloads to Azure, often used in conjunction with ASR for comprehensive disaster recovery and migration planning.
+
+- **[Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/)**  
+  Azure Monitor integrates with ASR to provide monitoring and alerting for your disaster recovery environment. It helps track replication health, identify potential issues, and optimize performance.
+
+By utilizing these resources, you can deepen your understanding of ASR’s capabilities, streamline your Hyper-V VM replication setup, and gain insights from experts and community members.
 
 
 
