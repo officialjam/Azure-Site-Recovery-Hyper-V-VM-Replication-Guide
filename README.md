@@ -73,6 +73,19 @@ The vault has been created and now we neede to prepare our hyper-v serevr for th
 <img width="1680" alt="13 75" src="https://github.com/user-attachments/assets/1fac6c9e-4ba1-4cea-8753-f20ba9082b4d">
 
 ### Step 3: Replicating Hyper-V VMs
+- Go the site recovery and click " enable replication"
+<img width="1680" alt="14" src="https://github.com/user-attachments/assets/086b9ef0-7d37-428a-bf89-75afc8b52083">
+- Select the appropriate options, and when you get to the " Replication settions option" select your vm you want to replicate, select the os disk, disk type and target name 
+<img width="1680" alt="16" src="https://github.com/user-attachments/assets/646a0a66-db6f-4506-b69f-0ccde7317aff">
+- Select your created or previously existing policy and finish the replication 
+<img width="1680" alt="16 5" src="https://github.com/user-attachments/assets/c4579782-01d9-448d-9efa-e20a5c80816c">
+- Go to the vault and then in overview, select the site recovery option. It should show you the connection from azure to your host, your replication health etc
+<img width="1680" alt="17" src="https://github.com/user-attachments/assets/f31fd48e-e796-4d51-8ff7-9d8d638b05c0">
+-  Then under replication health click on the "view all vm's" to see the synchronization status, wait till its a 100% then the replication is complete 
+<img width="1680" alt="17 5" src="https://github.com/user-attachments/assets/5a9b99a8-1a54-451e-9957-897cb4d02959">
+
+## Managing Replication
+
 
 
 
